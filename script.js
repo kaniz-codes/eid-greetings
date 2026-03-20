@@ -14,20 +14,17 @@ const previewCard = document.getElementById("previewCard");
 
 const openings = [
   "Eid Mubarak",
-  "Shubho Eid",
-  "Warm Eid wishes",
-  "Blessed Eid",
-  "Happy Eid",
-  "Joyful Eid wishes",
-  "Eid blessings",
-  "Sending Eid joy",
-  "Peaceful Eid wishes",
+  "ঈদের শুভেচ্ছা",
+  "Eid wishes for you",
+  "Happy Eid Mubarak",
+  "Eid wishes for you",
+  "Sending you Eid blessings",
   "Wishing you Eid joy"
 ];
 
 const relationText = {
   friend: [
-    "wishing you smiles and peace.",
+    "wishing you happiness and peace.",
     "hope your Eid feels bright and happy.",
     "sending you joy and good moments.",
     "may your Eid be sweet and cheerful.",
@@ -99,6 +96,7 @@ const toneText = {
     "May Allah fill your home with barakah.",
     "Praying for mercy and peace for you.",
     "May your Eid be blessed with goodness.",
+    "Taqabbalallahu minna wa minkum.",
     "May Allah grant you joy and ease."
   ],
   short: [
@@ -107,7 +105,7 @@ const toneText = {
     "Peace and joy to you.",
     "Warm wishes for Eid.",
     "Have a beautiful Eid.",
-    "Sending Eid blessings."
+    "Sending you Eid blessings."
   ]
 };
 
