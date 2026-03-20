@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eid Greeting Generator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="micro">ঈদ মোবারক • EID MUBARAK</p>
+      <h1>
+        Create and share
+        <span class="eid-green">Eid greeting</span>
+      </h1>
+      <p class="hero-copy">
+        An Eid greeting generator for family and friends to share happiness, peace, and togetherness.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="panel controls">
+        <div class="section-head">
+          <p class="micro">GREETING BUILDER</p>
+          <h2>Make your message</h2>
+        </div>
+
+        <div class="field">
+          <label for="name">Recipient name</label>
+          <input id="name" type="text" placeholder="Type a name..." />
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="relation">For</label>
+            <div class="select-wrap">
+              <select id="relation">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="parents">Parents</option>
+                <option value="siblings">Sibling</option>
+                <option value="everyone">Everyone</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="tone">Tone</label>
+            <div class="select-wrap">
+              <select id="tone">
+                <option value="warm">Warm</option>
+                <option value="playful">Playful</option>
+                <option value="heartfelt">Heartfelt</option>
+                <option value="dua">Dua-focused</option>
+                <option value="short">Short</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="check-row">
+            <input type="checkbox" id="includeSunnah" checked />
+            <span>Include a sunnah reminder</span>
+          </label>
+        </div>
+
+        <div class="action-row">
+          <button id="generateBtn" class="btn btn-primary">Generate</button>
+          <button id="surpriseBtn" class="btn btn-secondary">Surprise me</button>
+          <button id="copyBtn" class="btn btn-secondary">Copy</button>
+        </div>
+
+        <p class="status" id="statusText">Your greeting updates as you type.</p>
+      </section>
+
+      <section class="panel preview-wrap">
+        <div class="section-head">
+          <p class="micro">LIVE PREVIEW</p>
+          <h2>Your Eid card</h2>
+        </div>
+
+        <div class="preview-card" id="previewCard">
+          <div class="card-badge">Eid greeting</div>
+          <h3 id="cardTitle">Eid Mubarak</h3>
+          <p id="cardMessage">
+            Wishing you a joyful Eid full of peace and blessings.
+          </p>
+
+          <div class="preview-footer">
+            <span>Simple and easy to share</span>
+            <span class="mono">Made by K.Fatema</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="sunnah-section">
+      <div class="section-head sunnah-head">
+        <p class="micro">EID REMINDERS</p>
+        <h2>Sunnahs to follow on Eid</h2>
+        <p class="section-copy">
+          A simple reminder section to keep Eid joyful and meaningful.
+        </p>
+      </div>
+
+      <div class="sunnah-grid">
+        <article class="sunnah-card">
+          <div class="sunnah-icon">👕</div>
+          <h3>Wear clean clothes</h3>
+          <p>Prepare neatly and welcome Eid with cleanliness and care.</p>
+        </article>
+
+        <article class="sunnah-card">
+          <div class="sunnah-icon">🕌</div>
+          <h3>Recite takbeer</h3>
+          <p>Fill the day with remembrance and gratitude. "Allahu Akbar, Allahu Akbar, La ilaha illa Allah, Allahu Akbar, Allahu Akbar, wa lillahil hamd".</p>
+        </article>
+
+        <article class="sunnah-card">
+          <div class="sunnah-icon">🍽️</div>
+          <h3>Eat sweet or dates</h3>
+          <p>Start your morning with odd-numbered dates before heading to prayer.</p>
+        </article>
+
+        <article class="sunnah-card">
+          <div class="sunnah-icon">🤝</div>
+          <h3>Greet others kindly</h3>
+          <p>Spread joy, warmth, and good manners on Eid.</p>
+        </article>
+
+        <article class="sunnah-card">
+          <div class="sunnah-icon">🛐</div>
+          <h3>Attend the Eid prayer</h3>
+          <p>Join the congregation and share the spirit of worship.</p>
+        </article>
+
+        <article class="sunnah-card">
+          <div class="sunnah-icon">🚶</div>
+          <h3>Return by another route</h3>
+          <p>It is well known to return from Eid prayer by a different path.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made by K.Fatema</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
